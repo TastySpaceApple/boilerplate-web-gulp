@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express.Router();
 
+app.use('/assets', express.static('./assets'));
+
 app.get('/', (req, res) => {
   res.render('index')
 })
